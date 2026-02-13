@@ -109,4 +109,43 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         songObserver.observe(card);
     });
+
+    // Image Modal Functionality
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const captionText = document.getElementById('caption');
+    const closeBtn = document.getElementsByClassName('close')[0];
+
+    // Get all images that should be clickable
+    const clickableImages = document.querySelectorAll('.merch-item img, .poster-item img, .gallery-item img');
+
+    clickableImages.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt || 'Image';
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Email display functionality
+    window.showEmail = function() {
+        const emailDisplay = document.getElementById('emailDisplay');
+        if (emailDisplay.style.display === 'block') {
+            emailDisplay.style.display = 'none';
+        } else {
+            emailDisplay.textContent = 'yungmans@qq.com';
+            emailDisplay.style.display = 'block';
+        }
+    };
 });
