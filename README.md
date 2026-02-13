@@ -92,11 +92,15 @@ To update the social media links in [index.html](index.html#L415), find the "Con
 
 ## How to Use
 
-1. Open [index.html](index.html) in a web browser to view the website
-2. Add your actual images to the `images/` folder
-3. Add your audio files to the `audio/` folder
-4. Update the content in [index.html](index.html) with your actual information
-5. Refresh the browser to see your changes
+1. **Online Access**
+   - Visit the live website at: [https://ecstaticmurdockal.github.io/sms-hiphop/](https://ecstaticmurdockal.github.io/sms-hiphop/)
+
+2. **Local Development**
+   - Open [index.html](index.html) in a web browser to view the website
+   - Add your actual images to the `images/` folder
+   - Add your audio files to the `audio/` folder
+   - Update the content in [index.html](index.html) with your actual information
+   - Refresh the browser to see your changes
 
 ## Customization
 
