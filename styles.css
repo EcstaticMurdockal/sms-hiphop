@@ -443,6 +443,7 @@ section h2 {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .gallery-item:hover .gallery-overlay {
@@ -485,6 +486,22 @@ section h2 {
 }
 
 .email-display {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.wechat-card {
+    cursor: pointer;
+}
+
+.wechat-display {
     margin-top: 1rem;
     padding: 1rem;
     background: var(--primary-color);

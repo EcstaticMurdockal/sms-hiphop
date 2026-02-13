@@ -148,4 +148,15 @@ document.addEventListener('DOMContentLoaded', function() {
             emailDisplay.style.display = 'block';
         }
     };
+
+    // WeChat display functionality
+    window.showWeChat = function() {
+        const wechatDisplay = document.getElementById('wechatDisplay');
+        if (wechatDisplay.style.display === 'block') {
+            wechatDisplay.style.display = 'none';
+        } else {
+            wechatDisplay.textContent = '微信公众号：SMS嘻哈联盟';
+            wechatDisplay.style.display = 'block';
+        }
+    };
 });
