@@ -109,45 +109,4 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         songObserver.observe(card);
     });
-
-    function setupLyrics(containerId) {
-        const lyricsContainer = document.getElementById(containerId);
-        if (lyricsContainer) {
-            const lyricLines = lyricsContainer.querySelectorAll('.lyric-line');
-            
-            lyricLines.forEach((line, index) => {
-                line.addEventListener('click', function() {
-                    lyricLines.forEach(l => l.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-
-            let currentLineIndex = 0;
-            
-            setInterval(() => {
-                if (currentLineIndex < lyricLines.length) {
-                    lyricLines.forEach(l => l.classList.remove('active'));
-                    lyricLines[currentLineIndex].classList.add('active');
-                    
-                    const activeLine = lyricLines[currentLineIndex];
-                    const containerRect = lyricsContainer.getBoundingClientRect();
-                    const lineRect = activeLine.getBoundingClientRect();
-                    
-                    if (lineRect.bottom > containerRect.bottom || lineRect.top < containerRect.top) {
-                        activeLine.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'center'
-                        });
-                    }
-                    
-                    currentLineIndex++;
-                } else {
-                    currentLineIndex = 0;
-                }
-            }, 5000);
-        }
-    }
-
-    setupLyrics('lyrics-container-1');
-    setupLyrics('lyrics-container-2');
 });

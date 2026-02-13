@@ -434,60 +434,12 @@ section h2 {
     width: 100%;
 }
 
-.song-lyrics h4 {
-    color: var(--dark-color);
-    margin-bottom: 1rem;
-}
-
 .album-description {
     background: var(--light-color);
     padding: 1.5rem;
     border-radius: 10px;
     color: var(--text-light);
     line-height: 1.8;
-}
-
-.lyrics-text {
-    background: var(--light-color);
-    padding: 1.5rem;
-    border-radius: 10px;
-    color: var(--text-light);
-    white-space: pre-wrap;
-    font-family: 'Courier New', monospace;
-    font-size: 0.95rem;
-    line-height: 1.8;
-    max-height: 300px;
-}
-
-.lyrics-container {
-    background: var(--light-color);
-    padding: 1.5rem;
-    border-radius: 10px;
-    max-height: 350px;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-}
-
-.lyric-line {
-    padding: 0.5rem 0;
-    color: var(--text-light);
-    font-size: 1rem;
-    line-height: 2;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.lyric-line:hover {
-    color: var(--secondary-color);
-}
-
-.lyric-line.active {
-    color: var(--dark-color);
-    font-size: 1.1rem;
-    font-weight: bold;
-    background: linear-gradient(90deg, var(--primary-color), transparent);
-    padding-left: 1rem;
-    border-radius: 5px;
 }
 
 .gallery-section {
