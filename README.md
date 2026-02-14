@@ -44,6 +44,9 @@ sms-hiphop/
 │   ├── gallery7-placeholder.jpg
 │   └── gallery8-placeholder.jpg
 └── audio/              # Folder for audio files
+    ├── rise-up.mp3
+    ├── shenzhen-vibes.mp3
+    └── unstoppable.mp3
 ```
 
 ## How to Add Your Content
